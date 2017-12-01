@@ -154,6 +154,105 @@ header {
   padding-top: 30px
 }
 
+.buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  height: 75px;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  box-shadow: 0 0 1px #888
+}
+
+.button-volunteers, .button-initiatives {
+  width: 50%;
+  height: 75px;
+  background: #cf0;
+  display: table;
+  border: 1px solid #888;
+  box-shadow: 2px 0 5px #888
+}
+
+.button-volunteers:hover, .button-initiatives:hover {
+  background: #b1d523
+}
+
+.button-volunteers {
+  float: left
+}
+
+.button-initiatives {
+  float: right
+}
+
+.button-volunteers a, .button-initiatives a {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  font-weight: 700;
+  line-height: 1em;
+  text-decoration: none
+}
+
+footer {
+  padding: 25px 0;
+  min-height: 300px;
+  position: relative;
+  background-image: url(../img/footer_4.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  text-align: center
+}
+
+footer p {
+  padding: 3px 0
+}
+
+.bottom-menu .nav-current {
+  pointer-events: none;
+  cursor: default;
+  color: #737373;
+}
+
+.bottom-menu li {
+  padding: 0 10px;
+  font-weight: 700
+}
+
+.bottom-menu a:hover {
+  color: #23527c;
+}
+
+.contact li {
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+.copyleft * {
+  display: inline-block;
+  line-height: 16px;
+  vertical-align: middle
+}
+
+.copyleft i {
+  font-size: 16px
+}
+
+.copyleft a {
+  margin-left: 10px
+}
+
+.social i {
+  margin: 0 5px
+}
+
+.icons a {
+  text-decoration: none
+}
+
 @media only screen and (min-width: 769px) {
   .nav__list {
     display: flex;
@@ -245,6 +344,32 @@ header {
   .logo {
     max-width: 30%
   }
+
+  .inner-header {
+    height: 75px
+  }
+  .inner-logo {
+    display: block;
+    height: 70px;
+    padding: 10px 0
+  }
+  .inner-title {
+    text-align: center;
+    line-height: 70px;
+    padding: 0 8px;
+    margin: 0
+  }
+  .inner-header-background {
+    background-image: none
+  }
+
+  .button-volunteers a, .button-initiatives a {
+    padding: 0 5px
+  }
+
+  footer {
+    background-size: auto 50%
+  }
 }
 
 @media (min-width:480px) {
@@ -286,6 +411,30 @@ header {
   .logo {
     max-width: 20%
   }
+
+  .inner-header {
+    height: 100px
+  }
+  .inner-logo {
+    display: block;
+    height: 90px
+  }
+  .inner-title {
+    margin: 0 0 0 6px;
+    text-align: center;
+    line-height: 100px
+  }
+
+  .button-volunteers a, .button-initiatives a {
+    padding: 0 10px
+  }
+
+  .bottom-menu {
+    margin: 0 0 30px -5px
+  }
+  footer {
+    background-size: auto 70%
+  }
 }
 
 @media (min-width:720px) {
@@ -319,6 +468,33 @@ header {
   }
   .logo {
     max-width: 15%
+  }
+
+  .inner-header {
+    height: 100px
+  }
+  .inner-logo {
+    height: 90px;
+    padding: 5px 0
+  }
+  .inner-title {
+    margin: 0 0 0 20px;
+    line-height: 80px
+  }
+  .inner-header-background {
+    background-size: 50%;
+    background-image: url(../img/header-inner.png)
+  }
+
+  .button-volunteers a, .button-initiatives a {
+    padding: 0 15px
+  }
+
+  .bottom-menu {
+    margin: 0 0 25px -5px
+  }
+  .contact {
+    margin: 0 0 15px -5px
   }
 }
 
@@ -355,5 +531,16 @@ header {
   }
   .logo {
     max-width: 13%
+  }
+
+  .inner-header-background {
+    background-size: 35%
+  }
+  .inner-logo {
+    height: 100px
+  }
+  .inner-title {
+    line-height: 100px;
+    margin: 0 30px
   }
 }
